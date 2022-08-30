@@ -21,10 +21,19 @@
 
 // Coding Exercise 12: productOfArray
 
-function productOfArray(arr) {
-  let initial = 1;
-  let product = arr.reduce((p, c) => p * c, initial)
-  return product
+// function productOfArray(arr) {
+//   let initial = 1;
+//   let product = arr.reduce((p, c) => p * c, initial)
+//   return product
+// }
+
+// console.log(productOfArray([1,2,3]))
+
+// Coding Exercise 13: recursiveRange
+
+function recursiveRange(num) {
+  if (num < 1) return 0
+  return num + recursiveRange(num - 1)
 }
 
-console.log(productOfArray([1,2,3]))
+console.log(recursiveRange(6))

@@ -21,8 +21,10 @@
 
 // Coding Exercise 12: productOfArray
 
-function productofArray(arr) {
-
-
-
+function productOfArray(arr) {
+  let initial = 1;
+  let product = arr.reduce((p, c) => p * c, initial)
+  return product
 }
+
+console.log(productOfArray([1,2,3]))

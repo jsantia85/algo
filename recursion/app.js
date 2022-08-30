@@ -85,6 +85,21 @@
 
 // Coding Exercise 10: power 
 
-function power() {
-  
+function power(b, e) {
+  // power is the product of multiplying a number by itself
+  // the base number tells what number is being multiplied
+  // the exponent, tells how many times the base is being multiplied
+  // base case: if e < 0 { return result or p assuming }
+  // when e is b return b when e is 0 return 1
+  if (e === 0){
+    return 1;
+  } else {
+    return b * power(b, e - 1)
+  }
+
+  // try to use recursion
+  // equation essentially p = b ^ e or p = b * power(e - 1)
+
 }
+
+console.log(power(5,5))

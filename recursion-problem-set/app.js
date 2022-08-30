@@ -12,9 +12,17 @@
 
 // Coding Exercise 11: factorial
 
-function factorial(num) {
-  if (num === 0) return 1;
-  return num * factorial(num - 1)
-}
+// function factorial(num) {
+//   if (num === 0) return 1;
+//   return num * factorial(num - 1)
+// }
 
-console.log(factorial(4))
+// console.log(factorial(4))
+
+// Coding Exercise 12: productOfArray
+
+function productofArray(arr) {
+
+
+
+}

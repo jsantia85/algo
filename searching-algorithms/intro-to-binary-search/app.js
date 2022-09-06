@@ -9,18 +9,18 @@
 // if you never find the value, return -1
 
 function binarySearch (arr, val) {
-  let min = 0;
-  let max = arr.length - 1;
-  let guess;
+  let start = 0;
+  let end = arr.length - 1;
+  let middle;
 
-  while (min <= max) {
-    guess = Math.floor((max + min) / 2);
-    if (arr[guess] === val) {
-      return guess
-    } else if (arr[guess] < val) {
-      min = guess + 1;
+  while (start <= end) {
+    middle = Math.floor((end + start) / 2);
+    if (arr[middle] === val) {
+      return middle
+    } else if (arr[middle] < val) {
+      start = middle + 1;
     } else {
-      max = guess - 1;
+      start = middle - 1;
     }
   }
 

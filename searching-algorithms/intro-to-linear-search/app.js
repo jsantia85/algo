@@ -1,4 +1,4 @@
-// linear search pseudocode
+// linear search exercise
 // create a function that accepts an array and a value
 // loop through the array and check if the currenty array element is equal to the value
 // if it is found, return the index at which the element is found

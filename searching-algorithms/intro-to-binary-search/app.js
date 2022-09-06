@@ -9,5 +9,22 @@
 // if you never find the value, return -1
 
 function binarySearch (arr, val) {
+  let min = 0;
+  let max = arr.length - 1;
+  let guess;
 
+  while (min <= max) {
+    guess = Math.floor((max + min) / 2);
+    if (arr[guess] === val) {
+      return guess
+    } else if (arr[guess] < val) {
+      min = guess + 1;
+    } else {
+      max = guess - 1;
+    }
+  }
+
+  return -1 
 }
+
+console.log(binarySearch([1, 2, 3, 4, 5], 10))

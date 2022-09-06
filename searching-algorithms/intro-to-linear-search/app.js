@@ -6,15 +6,9 @@
 
 function findValue (arr, val) {
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === val) {
-      return i
-    } else {
-      let check =  arr.includes(val)
-      if (!check) {
-        return -1
-      }
-    }
+    if (arr[i] === val) return i;
   }
+  return -1
 }
 
-console.log(findValue([1,2,3], 3))
+console.log(findValue([1,2,3], 4))

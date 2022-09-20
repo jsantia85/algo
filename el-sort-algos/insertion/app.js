@@ -1,3 +1,5 @@
+// O(n^2)
+
 function insertionSort(arr){
 	var currentVal;
     for(var i = 1; i < arr.length; i++){

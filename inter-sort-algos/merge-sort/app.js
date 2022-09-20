@@ -34,4 +34,6 @@ function mergeSort(arr){
   return merge(left, right);
 }
 
-console.log(mergeSort([10,24,76,73]))
+console.log(mergeSort([10,24,76,73,36,5,1,2,13,22,16]))
+
+// o(n log n)
